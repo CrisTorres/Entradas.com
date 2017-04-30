@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explora</title>
+<link href='images/inicio.png' rel='shortcut icon' type='image/png'>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Raleway Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="jquery/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<!-- css's propios-->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="style/footer.css">
+<link rel="stylesheet" type="text/css" href="style/header.css">
+<link rel="stylesheet" type="text/css" href="style/explora.css">
+
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="script/explora.js"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body onload="iniciar()">
+
+	<div class="row">       <!-- Header -->
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" id="header">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home.html">
+                        <img id="logo" alt="Error" src="images/logo.png">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categor&iacute;as <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="busqueda.html">M&uacute;sica</a></li>
+                                <li><a href="busqueda.html">Cine</a></li>
+                                <li><a href="busqueda.html">Artes esc&eacute;nicas</a></li>
+                                <!-- <li role="separator" class="divider"></li> -->
+                                <li><a href="busqueda.html">Ferias y Congresos</a></li>
+                                <li><a href="busqueda.html">Exposiciones</a></li>
+                                <li><a href="busqueda.html">Deportes</a></li>
+                                <li><a href="busqueda.html">Familiares/Infantil</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search" action = "busqueda.html">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Buscar</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><button type="button" class="btn btn-default navbar-btn" onclick="window.location.href='explora.html'">Crea tu plan</button></li>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Idioma <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Español (ES)</a></li>
+                                    <li><a href="#">English (EN)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li><a href="ayuda.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Ayuda</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mi perfil</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>	
+    
+    <br>
+    <br>
+
+	
+<!-- Eventos cerca -->
+	
+	<div class="row" id="eventos"> <!-- Eventos -->
+		<div class="col-sm-1 col-md-2">
+		<!-- margen izquierdo-->
+		</div>
+		<div class="col-md-6">
+			<h1 id="h1eventos"><span class="tituloexplora label label-default" id="tituloEventos">Eventos cerca de ti</span></h1>
+		</div>
+		<div class="col-md-1">
+			<div class="dropdown">
+			  <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Madrid
+				<span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li id="ciudad1"><a href="#">Barcelona</a></li>
+				<li id="ciudad2"><a href="#">Bilbao</a></li>
+				<li id="ciudad3"><a href="#">Madrid</a></li>
+				<li id="ciudad4"><a href="#">Valencia</a></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="col-xs-8 col-md-1">
+			<button type="button" class="btn btn-default btn-lg" id="geoloc">
+				<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+			</button>
+		</div>
+		<div class="col-sm-1 col-md-2">
+			<!-- margen derecho-->
+		</div>
+	</div>
+	
+	<div class="row"> <!-- Google maps -->
+		<div class="col-xs-0 col-sm-0 col-md-2 col-lg-2">
+			<!-- margen izquierdo-->
+		</div>
+		
+		<div class="mapcontainer col-xs-12 col-sm-12 col-md-8 col-lg-8" id="googleMap"></div>
+		
+		<div class="col-xs-0 col-sm-0 col-md-1 col-lg-2">
+			<!-- margen derecho-->
+		</div>
+	</div>
+	
+	<div class="row" id="creatuplan">
+		<div class="col-sm-1 col-md-2">
+				<!-- margen izquierdo-->
+		</div>
+		<!-- Crea tu plan -->
+		<div class="col-md-4">
+			<button class="btn btn-default btn-lg" type="button" id="creabuton" onclick='window.location = "creatuplan.html"'> ¡Crea tu propio plan! </button>
+		</div>
+		<div class="col-md-4">
+			<h4 id="txtanimo"> Anima a tus amigos a crear su propio plan</h4>
+			<div class="creaplansocial">
+				<img class="clicable" src="images/facebook.png" alt="facebook" width ="35px" height="35px" href="#">
+				<img class="clicable" src="images/twitter.png" alt="twitter" width ="35px" height="35px" href="#">
+			</div>
+		</div>
+		
+		<div class="col-sm-1 col-md-2">
+				<!-- margen derecho-->
+		</div>
+	</div>
+	
+	 <!-- Otros planes -->
+	<div class="row"> <!-- Titulo -->
+		<div class="col-sm-1 col-md-2">
+			<!-- margen izquierdo-->
+		</div>
+		
+		<div class="col-md-8 ">
+			<h1 class="tituloexplorah"><span class="tituloexplora label label-default" id="tituloPlanes">Planes destacados</span></h1>
+		</div>
+		
+		<div class="col-sm-1 col-md-2">
+			<!-- margen derecho-->
+		</div>
+	</div>
+	<!-- Tarjetas -->
+	
+	<div class="container">
+      <div class="row filaplanes">
+        <div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+
+		<div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+		
+		<div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+        
+	</div><!--/row-->
+	</div><!--/container -->
+	
+	<div class="container">
+      <div class="row filaplanes">
+        <div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+
+		<div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+		
+		<div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+        
+	</div><!--/row-->
+	</div><!--/container -->
+	
+	<div class="container">
+      <div class="row filaplanes">
+        <div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+
+		<div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+		
+		<div class="col-xs-18 col-sm-6 col-md-3 main-panel">
+		  <a class='default-link' href='javascript:void(0)' onclick='window.location = "vistadelplan.html"'></a>
+          <div class="thumbnail tarjetaplan">
+            <img src="http://placehold.it/500x250/EEE">
+              <div class="caption">
+                <h5 class="tituloplanes textoplanes">NOCHE DE CINE Y MÚSICA</h5>
+                <h6 class="subtituloplanes textoplanes">SÁBADO 25/06/2016</h6>
+                <h4><span class="label label-default">Gran Vía</span><span class="badge puntuacion">4,5</span></h4>
+			  </div>
+          </div>
+        </div>
+        
+	</div><!--/row-->
+	</div><!--/container -->
+	
+	<!-- Más -->
+	<div class="row">
+	<div class="col-sm-1 col-md-5">
+			<!-- margen izquierdo-->
+	</div>
+	<div class="paginas col-md-3">
+		<nav>
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="col-sm-1 col-md-4">
+			<!-- margen derecho-->
+	</div>
+	</div>
+	<br>
+	<!-- Footer-->
+	<div class = "row" id="footer1"> <!-- Footer-->
+			<div class="col-sm-12 col-md-12">
+				<div class="footerComp" id="f1">
+					<a href="#">Versión escritorio</a>
+				</div>
+				<div class="footerComp" id="f2">
+					<p> DESCÁRGATE NUESTRA APP</p>
+					<img src="images/icono.png" alt="APP" width ="35px" height="35px">
+				</div>
+				<div class="footerComp" id="f3">
+					<p> SÍGUENOS EN:</p>
+					<img src="images/facebook.png" alt="facebook" width ="35px" height="35px">
+					<img src="images/twitter.png" alt="twitter" width ="35px" height="35px">
+				</div>
+
+			</div>
+		</div>
+		<div class = "row" id="footer2"> <!-- Footer-->
+			<div class="col-sm-12 col-md-12">
+				<div class="btn-group" role="group" aria-label="...">
+					<a href="contacto.html"><button type="button" class="btn btn-default botonFooter">Ayuda</button></a>	
+                    <button type="button" class="btn btn-default botonFooter">Política y privacidad</button>
+                    <button type="button" class="btn btn-default botonFooter">¿Quienes somos?</button>
+                    <a href="sitemap.html"><button type="button" class="btn btn-default botonFooter">Mapa del sitio</button></a>	
+                    <a href="ayuda.html"><button type="button" class="btn btn-default botonFooter">Preguntas frecuentes</button></a>  
+				</div>
+
+			</div>
+		</div>
+		<div class = "row" id="footer3"> <!-- Footer-->
+			<div class="col-sm-12 col-md-12">
+				<div class="footerComp2" id="ff1">
+					<img src="images/logo.png" alt="logo">
+				</div>
+				<div class="footerComp2" id="ff2">
+					<p>Venta telefónica 902 488 488</p>
+					<p>0.09 €/min (IVA incluido)</p>
+					<p>Establecimiento de llamada 0,12€ (IVA incluido)</p>
+					<p>Lunes a Domingo- 10-24h</p>
+				</div>
+				<div class="footerComp2" id="ff3">
+					<p>(c) ENTRADAS EVENTIM. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	<!-- Fin Footer-->
+	
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vista evento</title>
+<link href='images/inicio.png' rel='shortcut icon' type='image/png'>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="jquery/jquery-1.11.3.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- Mostrar valoraciones -->
+    <script src="script/star-rating.js"></script>
+    <link rel="stylesheet" href="style/star-rating.css" />
+    
+    <!-- Calendario -->
+    <script src="script/jquery.ui.datepicker-es.js"></script>
+    <link rel="stylesheet" href="style/jquery-ui.css" />
+    
+<!-- css's propios-->
+<link rel="stylesheet" type="text/css" href="style/style1.css">
+<link rel="stylesheet" type="text/css" href="style/footer.css">
+<link rel="stylesheet" type="text/css" href="style/header.css">
+<!-- js's propios -->
+<script src="script/script1.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body onload="iniciar()">
+    <div class="row">       <!-- Header -->
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" id="header">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home.html">
+                        <img id="logo" alt="Error" src="images/logo.png">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categor&iacute;as <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="busqueda.html">M&uacute;sica</a></li>
+                                <li><a href="busqueda.html">Cine</a></li>
+                                <li><a href="busqueda.html">Artes esc&eacute;nicas</a></li>
+                                <!-- <li role="separator" class="divider"></li> -->
+                                <li><a href="busqueda.html">Ferias y Congresos</a></li>
+                                <li><a href="busqueda.html">Exposiciones</a></li>
+                                <li><a href="busqueda.html">Deportes</a></li>
+                                <li><a href="busqueda.html">Familiares/Infantil</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search" action = "busqueda.html">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Buscar</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><button type="button" class="btn btn-default navbar-btn" onclick="window.location.href='explora.html'">Crea tu plan</button></li>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Idioma <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Español (ES)</a></li>
+                                    <li><a href="#">English (EN)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li><a href="ayuda.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Ayuda</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mi perfil</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>	
+
+
+<div class="body row"> 
+	<div id="hero" class="jumbotron">
+		<div class="row"> 
+			<div class="col-xs-2 col-md-1">
+				<!-- margen izquierdo-->
+			</div>
+			<div class="col-xs-8 col-md-10">
+                <div class="row"> 
+                    <h1> El Rey León</h1>
+				</div>
+                <div class="row">
+                    <div class="col-s-1 col-md-8">
+                        <!-- margen izquierdo-->
+                    </div>
+                    <div class="col-s-11 col-md-4">
+                         <h3>Valoración de los usuarios:</h3>
+                        <div class="starsEvento"><input id="stars" class="rating-loading">
+                            <a id="val">4.5</a>
+                        </div>
+                        <br>
+                        <a class="btn btn-primary btn-lg" id="botonComprar" href="acordeon.html" role="button">Comprar entradas</a>
+                        
+                        <a class="btn btn-primary btn-lg" id="botonComprar" href="creatuplanreyleon.html" target="_blank" role="button">A&ntilde;adir a mi plan</a>
+                    </div>
+                    
+                </div>
+			</div>
+			<div class="col-xs-2 col-md-1">
+				<!-- margen derecho-->
+			</div>
+		</div>	
+	</div>
+
+</div>
+
+
+
+<div class="row"> <!-- Contenido-->
+	<div class="col-sm-1 col-md-2">
+		<!-- margen izquierdo-->
+	</div>
+	<div class="col-sm-10 col-md-8">
+		<div class="row"> 
+            <div class="col-sm-12 col-md-6"> <!-- lado izquierdo-->
+                <p> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra a lectus nec rutrum. 
+                Maecenas eu blandit turpis, sed aliquam libero. Nulla pretium aliquam est ut venenatis. Nullam convallis pellentesque turpis, 
+                et fringilla sapien tincidunt eget. 
+                Vestibulum auctor massa vitae mi mollis lacinia tristique in neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                In cursus, ipsum dapibus sagittis viverra, risus felis condimentum nisl, in placerat orci orci sit amet tellus. Morbi vel eros id ante aliquet tristique. Sed ac nunc vel lacus placerat eleifend. Morbi eu viverra neque, nec scelerisque urna. Etiam neque quam, luctus vitae vulputate sit amet, ornare ac risus. Cras massa purus, consequat eu enim non, condimentum ullamcorper enim. Maecenas nec pellentesque est. Sed ultricies ex nibh, ac porta orci euismod aliquam. Sed et nisl odio. Etiam cursus pellentesque luctus.
+                </p>
+                <p> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra a lectus nec rutrum. 
+                Maecenas eu blandit turpis, sed aliquam libero. Nulla pretium aliquam est ut venenatis. Nullam convallis pellentesque turpis, 
+                et fringilla sapien tincidunt eget. 
+                Vestibulum auctor massa vitae mi mollis lacinia tristique in neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                In cursus, ipsum dapibus sagittis viverra, risus felis condimentum nisl, in placerat orci orci sit amet tellus. Morbi vel eros id ante aliquet tristique. Sed ac nunc vel lacus placerat eleifend. Morbi eu viverra neque, nec scelerisque urna. Etiam neque quam, luctus vitae vulputate sit amet, ornare ac risus. Cras massa purus, consequat eu enim non, condimentum ullamcorper enim. Maecenas nec pellentesque est. Sed ultricies ex nibh, ac porta orci euismod aliquam. Sed et nisl odio. Etiam cursus pellentesque luctus.
+                </p>
+                
+            </div>
+            <div class="col-sm-12 col-md-6"> <!-- lado derecho-->
+                <div class="panel panel-primary">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Caracteristicas del evento</div>
+
+                    <!-- Table -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Caracteristica</th>
+                                <th>Disponibilidad</th>
+                                <th>Informacion extra</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Aparcamiento</td>
+                                <td>Si</td>
+                                <td>El local dispone de un aparcamiento propio con 100 plazas (necesidad de reserva previa, 5€)</td>
+                            </tr>
+                            <tr>
+                                <td>Servicios</td>
+                                <td>Si</td>
+                                <td>El local dispone de un total de 4 aseos totalmente equipados para distintas necesidades</td>
+                            </tr>
+                            <tr>
+                                <td>Bar/Restaurante</td>
+                                <td>No</td>
+                                <td>El local no posee ni bar ni restaurante en su interior</td>
+                            </tr>
+                            <tr>
+                                <td>Reserva butaca</td>
+                                <td>Si</td>
+                                <td>Salas con un total de 200 butacas</td>
+                            </tr>
+                            <tr>
+                                <td>Público no apto</td>
+                                <td>No</td>
+                                <td>Obra apta para todos los públicos</td>
+                            </tr>
+                            <tr>
+                                <td>Pago en taquilla</td>
+                                <td>Si</td>
+                                <td>Permitido el pago en taquilla 30 minutos antes del comienzo del evento</td>
+                            </tr>
+                            <tr>
+                                <td>Descuentos</td>
+                                <td>Si</td>
+                                <td>Descuentos para estudiantes, jubilados y personas en paro</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+	</div>
+	<div class="col-sm-1 col-md-2">
+		<!-- margen derecho-->
+	</div>
+    
+</div>
+<div class="row"> <!-- Enlaces de interes-->
+    <div class="col-sm-1 col-md-2">
+        <!-- margen izquierdo-->
+    </div>
+    <div class="col-sm-10 col-md-8">
+        
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"> Enlaces de interes</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+						<div class="col-xs-12 col-md-4">
+                            <div id="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4277143692557!2d-3.7110356851861908!3d40.42152706327269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287b44080927%3A0xd96d91a50e70b953!2sTeatro+Lope+de+Vega!5e0!3m2!1ses!2ses!4v1460996207791" width="inherit" height="inherit" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4" >
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> Transporte al evento</h4>
+                                    
+                                </div>
+                                <div class="panel-body">
+                                    <a href="#">Metro</a><br>
+                                    <a href="#">Tren</a><br>
+                                    <a href="#">Autobuses</a><br>
+                                    <a href="#">Taxi</a><br>
+                                    <a href="#">Aviones</a><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> Alojamiento cercano</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <a href="#">Hoteles</a><br>
+                                    <a href="#">Hostales</a><br>
+                                    <a href="#">Campings</a><br>
+                                    <a href="#">Alquiler</a><br>
+                                    <a href="#">Albergues</a><br>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+    </div>
+    <div class="col-sm-1 col-md-2">
+        <!-- margen derecho-->
+    </div>
+</div>
+<div class="row"> <!-- Comentarios-->
+    <div class="col-sm-1 col-md-2">
+        <!-- margen izquierdo-->
+    </div>
+    <div class="col-sm-10 col-md-8">
+        <div class="row OpinionSocial"> <!-- Comentarios-->
+            <div class="col-sm-12 col-md-7"> <!-- lado izquierdo-->
+                <div class="row comentarios"> <!-- Comentarios-->
+                    <h2 class="Social" >Opiniones de los usuarios</h2>
+                    <div class="row comentario">
+                        <div class="col-sm-12 col-md-3">
+                            <br>
+                            <img src="images/perfil.png" class="img-circle FotoPerfil" alt="Perfil" >
+                            <h4>Usuario</h4>
+                            <h5>Valoración: <small class="glyphicon glyphicon-star">4</small></h5>
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <br>
+                            <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra a lectus nec rutrum. 
+                            Maecenas eu blandit turpis, sed aliquam libero. Nulla pretium aliquam est ut venenatis. Nullam convallis pellentesque turpis, 
+                            et fringilla sapien tincidunt eget. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row comentario">
+                        <div class="col-sm-12 col-md-3">
+                            <br>
+                            <img src="images/perfil.png" class="img-circle FotoPerfil" alt="Perfil" >
+                            <h4>Usuario</h4>
+                            <h5>Valoración: <small class="glyphicon glyphicon-star">4</small></h5>
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <br>
+                            <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra a lectus nec rutrum. 
+                            Maecenas eu blandit turpis, sed aliquam libero. Nulla pretium aliquam est ut venenatis. Nullam convallis pellentesque turpis, 
+                            et fringilla sapien tincidunt eget. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row comentario">
+                        <div class="col-sm-12 col-md-3">
+                            <br>
+                            <img src="images/perfil.png" class="img-circle FotoPerfil" alt="Perfil" >
+                            <h4>Usuario</h4>
+                            <h5>Valoración: <small class="glyphicon glyphicon-star">4</small></h5>
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <br>
+                            <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra a lectus nec rutrum. 
+                            Maecenas eu blandit turpis, sed aliquam libero. Nulla pretium aliquam est ut venenatis. Nullam convallis pellentesque turpis, 
+                            et fringilla sapien tincidunt eget. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row comentario">
+                        <div class="col-sm-12 col-md-3">
+                            <br>
+                            <img src="images/perfil.png" class="img-circle FotoPerfil" alt="Perfil" >
+                            <h4>Usuario</h4>
+                            <h5>Valoración: <small class="glyphicon glyphicon-star">4</small></h5>
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <br>
+                            <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra a lectus nec rutrum. 
+                            Maecenas eu blandit turpis, sed aliquam libero. Nulla pretium aliquam est ut venenatis. Nullam convallis pellentesque turpis, 
+                            et fringilla sapien tincidunt eget. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <nav class="page">
+                        <ul class="pagination pagination-sm">
+                            <li class="disabled">
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5"><!-- lado derecho-->
+                
+                <div class="row redes">
+                    <h2 class="Social" >Comparte este evento en tus redes sociales</h2>
+                    <div class = "row fb">
+                        <a href="#">
+                            <div class="col-sm-12 col-md-8">
+                                <h3 class="Social" >Publica en tu muro</h3>
+                            </div>
+                            <div class="col-sm-12 col-md-4"> 
+                               <img src="images/facebook.png" alt="facebook" width ="35px" height="35px">
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "row twitter">
+                        <h3 class="Social" >O twitea con el Hastag</h3>
+                        <a href="#" class="Social"><h3>#EventoEntradasCOM</h3></a>
+                        <div class="row tw">
+                            <div class="col-sm-12 col-md-6">
+                                
+                                <img src="images/perfil.png" class="img-circle FotoTw" alt="Perfil" >
+                                <br>
+                                <h4>@Usuario</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                
+                                <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus lobortis nibh, ut laoreet dolor gravida et. Quisque convallis auctor nullam.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row tw">
+                            <div class="col-sm-12 col-md-6">
+                                
+                                <img src="images/perfil.png" class="img-circle FotoTw" alt="Perfil" >
+                                <br>
+                                <h4>@Usuario</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                
+                                <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus lobortis nibh, ut laoreet dolor gravida et. Quisque convallis auctor nullam.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row tw">
+                            <div class="col-sm-12 col-md-6">
+                                
+                                <img src="images/perfil.png" class="img-circle FotoTw" alt="Perfil" >
+                                <br>
+                                <h4>@Usuario</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                
+                                <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus lobortis nibh, ut laoreet dolor gravida et. Quisque convallis auctor nullam.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row tw">
+                            <div class="col-sm-12 col-md-6">
+                                
+                                <img src="images/perfil.png" class="img-circle FotoTw" alt="Perfil" >
+                                <br>
+                                <h4>@Usuario</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-12">
+                                
+                                <p> 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus lobortis nibh, ut laoreet dolor gravida et. Quisque convallis auctor nullam.
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-default btnTw">Ver más >></button>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1 col-md-2">
+        <!-- margen derecho-->
+    </div>
+</div>
+<br>
+<div class = "row" id="footer1"> <!-- Footer-->
+	<div class="col-sm-12 col-md-12">
+	<div class="footerComp" id="f1">
+			<a href="#">Versión escritorio</a>
+		</div>
+		<div class="footerComp" id="f2">
+			<p> DESCÁRGATE NUESTRA APP</p>
+			<img src="images/icono.png" alt="APP" width ="35px" height="35px">
+		</div>
+		<div class="footerComp" id="f3">
+			<p> SÍGUENOS EN:</p>
+			<img src="images/facebook.png" alt="facebook" width ="35px" height="35px">
+			<img src="images/twitter.png" alt="twitter" width ="35px" height="35px">
+		</div>
+
+	</div>
+</div>
+<div class = "row" id="footer2"> <!-- Footer-->
+	<div class="col-sm-12 col-md-12">
+		<div class="btn-group" role="group" aria-label="...">
+		  <a href="contacto.html"><button type="button" class="btn btn-default botonFooter">Ayuda</button></a>	
+		  <button type="button" class="btn btn-default botonFooter">Política y privacidad</button>
+		  <button type="button" class="btn btn-default botonFooter">¿Quienes somos?</button>
+		  <a href="sitemap.html"><button type="button" class="btn btn-default botonFooter">Mapa del sitio</button></a>	
+		  <a href="ayuda.html"><button type="button" class="btn btn-default botonFooter">Preguntas frecuentes</button></a>		  
+		</div>
+
+	</div>
+</div>
+<div class = "row" id="footer3"> <!-- Footer-->
+	<div class="col-sm-12 col-md-12">
+		<div class="footerComp2" id="ff1">
+			<img src="images/logo.png" alt="logo">
+		</div>
+		<div class="footerComp2" id="ff2">
+			<p>Venta telefónica 902 488 488</p>
+			<p>0.09 €/min (IVA incluido)</p>
+			<p>Establecimiento de llamada 0,12€ (IVA incluido)</p>
+			<p>Lunes a Domingo- 10-24h</p>
+		</div>
+		<div class="footerComp2" id="ff3">
+			<p>(c) ENTRADAS EVENTIM. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
