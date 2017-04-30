@@ -1,0 +1,61 @@
+#imagen{
+	float:left;
+	width: 25%;
+}
+#imagen img{
+	margin: 10px 0 15px 0;
+	max-width: 170px;
+}
+#texto{
+	float:left;
+	width: 40%;
+}
+#mapa{
+	float:left;
+	width: 35%;
+}
+.linea p{
+	float:left;
+	margin-right: 3px;
+	margin-bottom: 0px;
+	color: grey;
+}
+.linea2 p{
+	margin-right: 3px;
+	margin-bottom: 0px;
+	color: grey;
+}
+#botonModificar{
+	clear:both;
+	left:15px;
+}
+.fondoBlanco h4{
+	color:#FBB900;
+}
+#comprador1{
+	float:left;
+	width: 35%;
+	margin-bottom: 10px;	
+}
+#comprador2{
+	float:left;
+	width: 65%;
+}
+#precioFinal p{
+	color: black;
+}
+@media only screen and (max-width: 600px) {
+
+	#imagen{
+		width: 0%;
+	}
+	#texto{
+	width: 50%;
+	}
+	#mapa{
+		width: 50%;
+	}
+
+
+
+}

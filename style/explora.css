@@ -1,0 +1,131 @@
+#tituloEventos{
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#tituloPlanes{
+	padding-left: 30%;
+	padding-right: 30%;
+	margin-left:8%;
+}
+
+#googleMap{
+	width:1300px;
+	height:600px;
+}
+
+#creabuton{
+	margin-top:3%;
+	margin-left:20%;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+#creatuplan{
+	margin-top:1%;
+	padding-top:1%;
+	padding-bottom:1%;
+	padding-left:5%;
+	background-color: #5D6A7F;
+}
+
+#geoloc{
+	margin-left:60%;
+}
+
+#txtanimo{
+	color: white;
+}
+
+.tituloexplorah{
+	margin-bottom:3%;
+}
+
+.tituloexplora{
+	background-color: #343B46;
+}
+
+#h1eventos{
+	margin-top: 0px;
+	
+}
+
+#eventos{
+	margin-bottom: 1%;
+	
+}
+
+#masplanes{
+	margin-left:28%;
+}
+
+.creaplansocial{
+	margin-left:20%;
+}
+
+.filaplanes{
+	padding-left:15%;
+}
+
+.tarjetaplan{
+	background-color: #343B46;
+	padding:0;
+}
+
+.textoplanes{
+	color:white;
+}
+
+.tituloplanes{
+	margin-left:5%;
+}
+
+.subtituloplanes{
+	margin-left:20%;
+}
+
+.puntuacion{
+	margin-left:45%;
+}
+
+.main-panel{
+    /* only required rule to make this work */
+    position: relative;
+}
+
+.main-panel:hover{
+    background-color: white;
+}
+
+.default-link{
+  /* all rules required to make the whole div clickable */ 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+  /* this is a fix for IE7-9 */
+  background-color:#ffffff;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+  filter: alpha(opacity=0);  
+  opacity:0;  
+}
+
+.clicable{
+	cursor:pointer;
+}
+
+@media screen and (min-width: 1024px){
+    
+	.filaplanes{
+		padding-left:22%;
+	}
+}
+
+@media screen and (min-width: 1680px){
+	
+	.filaplanes{
+		padding-left:15%;
+	}
+}

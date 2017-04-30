@@ -1,0 +1,104 @@
+body {
+    background-color: #F2F2F2;
+    font-family: Raleway;
+}
+.breadcrumb{
+	margin: 30px 0 10px 0;
+	background-color: white;
+	color: grey;
+
+}
+.breadcrumb li a {
+	color:black;
+}
+.breadcrumb .active{
+	color: black;
+}
+.breadcrumb .active b{
+	text-decoration: underline;
+}
+.breadcrumb .pasado{
+	color: black;
+}
+.fondoBlanco{
+	background-color: white;
+	padding: 25px;
+	margin-bottom: 40px;
+	overflow: auto;
+
+}
+
+
+
+
+.well{
+	margin:0;
+	padding: 5px;
+	background-color: white !important;
+	background-image: none;
+	border: 0px;
+}
+.input-group{
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color: white;
+	margin-bottom:10px;
+}
+.input-group-addon{
+	background-color: #cccccc;
+	color:black;
+}
+.basic-addon2{
+	width: 50px;
+}
+.checkbox {
+	padding:0;
+	margin:0px;
+}
+.checkbox label{
+	padding-left:7px;
+
+}
+.checkbox label, .radio label{
+	min-height: 18px;
+}
+.checkbox input[type=checkbox]{
+	margin-left: -10px;
+}
+.botonAplicar{
+	background-color: #5D6A7F;
+	background-image: none;
+	color:white;
+	padding: 5px 35px;
+	text-shadow: -1px -1px 1px #000;
+	border: 1px solid grey;
+}
+#inline {
+	width: 100%;
+	display: inline-block;
+}
+#inline h4{
+	float:left;
+}
+#botonContinuar{
+	width: 100%;
+	clear:both;
+}
+.fondoBlanco img{
+	float:left;
+}
+#textoImagen{
+	overflow: auto;
+	padding-left:10px; 
+}
+#textoImagen p{
+	float:left;
+	padding: 0 2px;
+	margin: 0px;
+}
+.linea {
+	overflow: auto;
+	clear:both;
+	margin: 0px;
+	padding: 0px;
+}

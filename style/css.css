@@ -1,0 +1,37 @@
+#recomendados {
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	border-top: 1px solid grey;
+	padding-bottom: 20px;
+}
+
+#ofertas {
+	border-right: 1px solid black;
+	border-top: 1px solid grey;
+	padding-bottom: 20px;
+}
+
+h3 {
+	text-align: center;
+}
+
+#destacados {
+	border: 1px solid grey;
+}
+
+#cuerpo {
+	margin: 0px auto;
+}
+
+body {
+    background-color: #F2F2F2;
+    font-family: Raleway;
+}
+
+.imagen-carousel {
+	margin: 0px auto;
+}
+
+.item{
+	cursor: pointer;
+}

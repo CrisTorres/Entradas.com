@@ -1,0 +1,81 @@
+.nav-tabs{
+	font-size: 16px;
+	background-color: lightgrey;
+	border-bottom: 1px solid grey;
+}
+#tab1.active {
+	border-right: 1px solid grey;
+}
+#tab2.active {
+	border-left: 1px solid grey;
+}
+.nav-tabs li a {
+	margin: 0;
+}
+.nav-tabs li {
+	width: 50%;
+	text-align: center;
+}
+#tabs{
+	border: 1px solid grey;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	padding-left:0px;
+	padding-right: 0px;
+	background-color: white;
+}
+.tab-pane .active{
+	background-color: white;
+}
+h6{
+	padding:0;
+	margin: 0;
+	margin-left: 160px;
+	color:red;
+	visibility: hidden;
+}
+.form-inline{
+	margin: 10px 0 10px 30px;
+}
+.form-inline p{
+	margin: 20px 0px;
+}
+.form-group label{
+	width: 150px;
+}
+.form-control{
+	width:200px !important;
+
+}
+#noReg{
+	overflow: auto;
+	background-color: white;
+}
+.botonContinuar{
+	width: 200px;
+	clear:both;
+}
+.sinR{
+	float:left;
+	background-color: white;
+}
+.sinR2{
+	float:left;
+	width: 30%;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: white;
+}
+input[type="checkbox"]{
+	margin-right: 5px;
+}
+@media only screen and (max-width: 767px) {
+
+	h6{
+		margin-left: 10px;
+	}
+}
+
+

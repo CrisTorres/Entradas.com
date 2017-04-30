@@ -1,0 +1,191 @@
+/* ***************************************************************************** */
+/* ******************************* Mi parte ************************************ */
+/* ***************************************************************************** */
+/*********************************** Evento **********************************/
+.centrado{
+    text-align:center;
+    
+}
+.paginador{
+    text-align:center;
+}
+#botonComprar{
+	width: auto;
+	clear:both;
+	
+        
+
+}
+.imgRS{
+	cursor:pointer;
+}
+
+#hero{
+	
+	height:400px;
+	width: 100%;
+	clear:both;
+    color:white;
+	background-image: url("../images/Rey_leon_Jumbo.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.imagenEvento{
+   max-width: 98%;
+   margin:1%;
+   height:auto;
+   
+    
+}
+#map{
+    width:100%;
+    height:auto;
+}
+.OpinionSocial{
+    background-color:#343b46;
+
+}
+.Social{
+    color:white;
+    text-align:center;
+}
+.comentarios{
+   width: 99%;
+   margin-right:1%;
+   background-color:#343b46;
+   
+    
+}
+.comentario{
+   width: 96%;
+   margin:2%;
+   float:left;
+   background-color:white;
+   height:auto;
+   
+    
+}
+.FotoPerfil{
+    width:96%;
+    height:auto;
+    margin:2%;
+    float:left;
+
+    
+}
+.page{
+    text-align:center;
+}
+
+.redes{
+   width: 99%;
+   margin-left:1%;
+   background-color:#343b46;
+
+   height:100%;
+   
+    
+}
+.fb{
+    width: 98%; 
+    margin:1%;
+    height:auto;
+    background-color:#3b5998;
+    
+}
+.twitter{
+    width: 98%; 
+    margin:1%;
+    height:auto;
+    text-align:center;
+    background-color:#0084b4;
+    
+
+    
+}
+.tw{
+    width:98%;
+    margin:1%;
+    background-color:white;
+    background-color:#c0deed;
+    height:auto;
+    text-align:left;
+
+}
+.FotoTw{
+    width:40%;
+    height:auto;
+    margin:5%;
+    margin-top:10px;
+    margin-bottom:10px;
+    float:left;
+
+    
+}
+.btnTw{
+    text-align:center;
+    color:white;
+    background-color:#00aced;
+    background-image:none;
+}
+/****************************PERFIL*************************/
+.formulario{
+	background-color:#f1f1f1;
+}
+.titulo_apartado{			/* Cada titulo de input */
+	display:block;
+	font-size:18px;
+}
+.required, .optional{						/* Margen estético a los inputs */
+	background: #F5F5F5;
+	margin-top:0.5%;
+	margin-bottom:2%;
+	width:250px;
+	padding:11px 10px 11px 10px;
+	border:2px solid #ccc; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.opcional{					/* Mensaje que indica que dicho input es opcional */
+	font-size:10px;
+	margin:0;
+	padding:0;
+	display:block;
+}
+.panelLogin{
+    width:100%;
+    height:370px;
+    text-align:center;
+}
+#note{
+    color:red;
+}
+#constru{
+    color:orange;
+}
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+/*** Redimensionar ***/
+
+/********************* TABLETS **********************/
+
+@media only screen and (max-width: 1000px) {
+   	#hero{
+        height:300px;
+	}
+}
+
+/********************* MOVILES **********************/
+
+@media only screen and (max-width: 750px) {
+   	#hero{
+        height:200px;
+	}
+}
+
+/* ***************************************************************************** */

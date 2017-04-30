@@ -1,0 +1,135 @@
+body{
+	padding-top: 30px;
+}
+
+#footer1{
+	border-top: 1px solid grey;
+}
+.footerComp{
+	float: left;
+	text-align: center;
+	padding: 10px;
+}
+.footerComp p{
+	float: left;
+	margin-right: 15px;
+	padding-top: 8px;
+}
+.footerComp img{
+	float: left;
+	margin-right: 10px;
+}
+.footer1Comp a{
+//	margin-top: 60px;
+}
+#f1{
+	width: 30%;
+}
+#f2{
+	margin: 0 auto;
+	width: 40%;
+}
+#f3{
+	width: 30%;
+}
+#footer2{
+	padding: 5px;
+	background-color: #343B46;
+	text-align: center;
+}
+.botonFooter{
+	background-color: #343B46;
+	background-image: none;
+	color:white;
+	border: 0px;
+	padding: 10px 10px;
+	text-shadow: 0px 0px;
+	box-shadow: inset 0px 0px 0px;
+}
+#ff1 img{
+	width: 60%;
+	max-width: 218px;
+	min-width: 150px;
+}
+.btn-group{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+#footer3{
+	padding: 5px;
+	background-color: #5D6A7F;
+	padding-left: 20px;
+}
+.footerComp2{
+	float: left;
+	text-align: center;
+	padding: 10px;
+}
+#ff1{
+	width: 30%;	
+}
+#ff2{
+	width: 40%;	
+	text-align: center;
+	color:white;
+}
+#ff2 p{
+	padding:0px;
+	margin:0px;
+}
+#ff3{
+	color:white;
+	width: 30%;	
+}
+
+#f3 img{
+	cursor: pointer;
+}
+
+#f2 img{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 760px) {
+	#f1{
+		width: 20%;
+	}
+	#f2{
+		width: 45%;
+	}
+	#f3{
+		width: 35%;
+	}
+	
+}
+@media only screen and (max-width: 660px) {
+
+	.botonFooter{
+		width: 100%;
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+	#f1{
+		width: 100%;
+	}
+	#f2{
+		width: 100%;
+		margin: 0 25%;
+	}
+	#f3{
+		width: 100%;
+		margin: 0 30%;
+	}
+	#ff1{
+	width: 100%;	
+	}
+	#ff2{
+		width: 100%;	
+
+	}
+	#ff3{
+		color:white;
+		width: 100%;	
+	}
+}

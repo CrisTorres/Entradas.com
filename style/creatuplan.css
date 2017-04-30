@@ -1,0 +1,311 @@
+#tituloEventos{
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#tituloPlanes{
+	padding-left: 30%;
+	padding-right: 30%;
+	margin-left:17%;
+}
+
+#creabuton{
+	margin-top:3%;
+	margin-left:30%;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+#creatuplan{
+	margin-top:1%;
+	padding-top:1%;
+	padding-bottom:1%;
+	background-color: #5D6A7F;
+}
+
+#geoloc{
+	margin-left:60%;
+}
+
+.clockpicker{
+	margin-top: 40%;
+}
+
+.txtanimo{
+	color:white;
+}
+
+.tituloexplorah{
+	margin-bottom:3%;
+}
+
+.tituloexplora{
+	background-color: #343B46;
+}
+
+#h1eventos{
+	margin-top: 1%;
+}
+
+#eventos{
+	margin-bottom: 1%;
+	
+}
+
+#masplanes{
+	margin-left:28%;
+}
+
+.creaplansocial{
+	margin-left:1%;
+}
+
+.filaplanes{
+	padding-left:15%;
+}
+
+.tarjetaplan{
+	background-color: #343B46;
+	padding:0;
+}
+
+.textoplanes{
+	color:white;
+}
+
+.tituloplanes{
+	margin-left:5%;
+}
+
+.subtituloplanes{
+	margin-left:35%;
+}
+
+.puntuacion{
+	margin-left:45%;
+}
+
+#nombreplan{
+	width:245%;
+}
+
+#descplan{
+	width:300%;
+	resize: none;
+}
+
+#formError{
+	color: red;
+	font-weight: bold;
+	margin-left: 29%;
+	visibility: hidden;
+}
+
+/*----------------------
+Product Card Styles 
+----------------------*/
+.panel.panel--styled {
+    background: #F4F2F3;
+}
+.panelTop {
+    padding: 30px;
+}
+
+.panelBottom {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 20px;
+}
+.btn-add-to-cart {
+    background: #FD5A5B;
+    color: #fff;
+}
+.btn.btn-add-to-cart.focus, .btn.btn-add-to-cart:focus, .btn.btn-add-to-cart:hover  {
+	color: #fff;   
+    background: #FD7172;
+	outline: none;
+}
+.btn-add-to-cart:active {
+	background: #F9494B;
+	outline: none;
+}
+
+
+span.itemPrice {
+    font-size: 24px;
+    color: #FA5B58;
+}
+
+
+ 
+.card {
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-clip: padding-box;  
+    background-color:white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+.card .card-title {            
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card .card-image {               
+    position: relative;
+    overflow: hidden;
+}
+.card .card-image img {
+    border-radius: 2px 2px 0 0;
+    background-clip: padding-box;
+    position: relative;
+    z-index: 1;
+}
+.card .card-content { 
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 12px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+.catEvento{       
+    font-size:18px;
+}
+.card_content_2{    
+    margin-top:10px;
+    display:block;
+}
+.fechaEvento{      
+    float: right;
+}
+.card_content_3{   
+    margin-top:10px;
+    display:block;
+}
+.card_ubicacion{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    display:inline-table;
+    float: none;
+    padding: 0;
+}
+.card_precio{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    float:right;
+    display:inline-table;
+}
+.ciuEvento{
+    font-size: 14px;
+}
+
+#botonagregar{
+	margin-left:30%;
+	margin-top:50%;
+}
+
+#botonborrar{
+	margin-left:30%;
+	margin-top:10%;
+}
+
+.list {
+    max-height: 162px;
+}
+.list .list-image {
+    float: left;
+    width: 295px;                   
+    margin-right: 10px;
+}
+.list .list-image img {
+    border-radius: 2px 2px 0 0;
+    background-clip: padding-box;
+    position: relative;
+    z-index: 1;
+    height: 163px;
+}
+
+.starsEvento{
+    float:right;	
+}
+
+#dropZone{
+ background: #CCCCCC;
+ border: white dashed 3px;
+ padding: 25px;
+ padding-top:35%;
+ text-align: center;
+ margin:5%;
+ margin-top:1%;
+ width:100%;
+ height:320px;
+ color: white;
+ font-weight: bold;
+}
+
+@media screen and (max-width: 640px)  {
+    .list-xs {
+        max-height: none;
+    }
+
+    .list-xs .list-image-xs {                 /** La imagen de la carta **/
+        position: relative;
+        overflow: hidden;
+        float: none;
+        width: auto;
+        margin-right: auto;
+    }
+    .list-xs .list-image-xs img {
+        border-radius: 2px 2px 0 0;
+        background-clip: padding-box;
+        position: relative;
+        z-index: 1;
+        width: auto;
+        height: auto;
+    }
+    .vistaEvento{
+        display:none;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    
+	#nombreplan{
+		width:157%;
+	}
+	
+	#descplan{
+		width:220%;
+	}
+	
+	#relojPlan{
+		padding: 3px 1px;
+	}
+}
+
+@media screen and (min-width: 1680px){
+	
+	.txtanimo{
+		width: 120%;
+		margin-left:25%;	
+	}
+    
+	#nombreplan{
+		margin-left:22%;
+		width:250%;
+	}
+	
+	#descplan{
+		margin-left:25%;
+		width:315%;
+	}
+	
+	#relojPlan{
+		
+		padding: 3px 1px;
+	}
+}

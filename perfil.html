@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Mis datos</title>
+    <link href='images/inicio.png' rel='shortcut icon' type='image/png'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="jquery/jquery-1.11.3.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Mostrar valoraciones -->
+        <script src="script/star-rating.js"></script>
+        <link rel="stylesheet" href="style/star-rating.css" />
+    
+<!-- Calendario -->
+    <script src="script/jquery.ui.datepicker-es.js"></script>
+    <link rel="stylesheet" href="style/jquery-ui.css" />
+    
+    <!-- css's propios-->
+    <link rel="stylesheet" type="text/css" href="style/style1.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <!-- js's propios -->
+    <script src="script/script1.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            
+</head>
+
+<body onload="iniciar()">
+    <div class="row">       <!-- Header -->
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" id="header">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home.html">
+                        <img id="logo" alt="Error" src="images/logo.png">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categor&iacute;as <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="busqueda.html">M&uacute;sica</a></li>
+                                <li><a href="busqueda.html">Cine</a></li>
+                                <li><a href="busqueda.html">Artes esc&eacute;nicas</a></li>
+                                <!-- <li role="separator" class="divider"></li> -->
+                                <li><a href="busqueda.html">Ferias y Congresos</a></li>
+                                <li><a href="busqueda.html">Exposiciones</a></li>
+                                <li><a href="busqueda.html">Deportes</a></li>
+                                <li><a href="busqueda.html">Familiares/Infantil</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search" action = "busqueda.html">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Buscar</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><button type="button" class="btn btn-default navbar-btn" onclick="window.location.href='explora.html'">Crea tu plan</button></li>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Idioma <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Español (ES)</a></li>
+                                    <li><a href="#">English (EN)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li><a href="ayuda.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Ayuda</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Mi perfil</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>	
+	<br><br>		
+    <div class="body row">        
+        <div class="row centrado"> 
+            <h1 id="constru">P&aacute;gina en construcci&oacute;n, disculpe las molestias</h1>
+        </div>
+    
+        <div class="col-xs-1 col-md-2">
+            <!-- margen izquierdo-->
+        </div>
+        <div class="col-xs-10 col-md-8">
+            <div class="row centrado"> 
+                <h1>Datos de su perfil</h1>
+            </div>
+            <div class="row centrado">
+                <div class="col-xs-12 col-md-6">
+                    <!-- parte izquierda-->
+                    <h3>Cambie los atributos de su perfil que considere necesarios</h3>
+                    <h3>Si lo desea puede borrar su cuenta accediendo al siguiente enlace</h3>
+                    <a data-toggle="collapse" href="#collapseDelete" aria-expanded="false" aria-controls="collapseDelete">Borrar cuenta</a>
+                    <br>
+                    <div class="collapse" id="collapseDelete">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"> Introduce tu contrase&ntilde;a para confirmar el borrado</h3>
+                            </div>
+                            <div class="panel-body">
+                                <input class="required" type="password" name="ContraseñaB" placeholder="Ej: M1gu3l0N">
+                                <a class="btn btn-danger" id="botonComprar" role="button"  href="home.html">
+                                    Confirmar borrado y volver al home
+                                </a>
+                                <a data-toggle="collapse" href="#collapseDelete" aria-expanded="false" aria-controls="collapseDelete">Cancelar borrado</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"> ¿Tienes problemas con alguno de los campos?</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="tip"></div>
+                            
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <!-- parte derecha-->
+                    <div class="Usuario">
+                        <div class="Usr">
+                            <span class="titulo_apartado">Nombre de usuario:</span>
+                            <input class="required" type="text" name="Usuario" placeholder="Ej: Miguelon" value="Miguelon">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="Nombre">
+                        <div class="Name">
+                            <span class="titulo_apartado">Nombre:</span>
+                            <input class="required" type="text" name="NombreUsr" placeholder="Ej: Miguel" value="Miguel">
+                            
+                        </div>
+                        <div class="Apellido">
+                            <span class="titulo_apartado">Apellido:</span>
+                            <span class="opcional">Opcional</span>
+                            <input class="optional" type="text" name="ApellidoUsr" placeholder="Ej: Garc&iacute;a" value="Garc&iacute;a">
+                            
+                        </div>
+                    </div>
+                    <div class="Datos_contacto">
+                        <div class="Mail">
+                            <span class="titulo_apartado">Introduzca su e-mail:</span>
+                            <input class="required" type="text" name="email" placeholder="user@domain.com" value="user@domain.com">
+                            
+                        </div>
+                        <div class="Telefono">
+                            <span class="titulo_apartado">Introduzca su tel&eacute;fono:</span>
+                            <span class="opcional">Opcional</span>
+                            <input class="optional" type="text" name="telefono" placeholder="Ej: 123 456 789" value="123456789">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="Pass">
+                        <span class="titulo_apartado">Nueva contrase&ntilde;a:</span>
+                        <input class="required" type="password" name="Contraseña" placeholder="Ej: M1gu3l0N">
+                        <span class="titulo_apartado">Repita la nueva contrase&ntilde;a:</span>
+                        <input class="required" type="password" name="ContraseñaR" placeholder="Ej: M1gu3l0N">
+                            
+                    </div>
+                          						
+                </div>
+                               
+                <a class="btn btn-primary" id="botonComprar" role="button" data-toggle="collapse" href="#collapseChanges" aria-expanded="false" aria-controls="collapseChanges">
+                    Comfirmar cambios en mi perfil
+                </a>
+                
+                <div class="collapse" id="collapseChanges">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"> Introduce tu contrase&ntilde;a para confirmar los cambios</h3>
+                        </div>
+                        <div class="panel-body">
+                            <span class="titulo_apartado">Nota: <small>Si quieres cambiar tu contrase&ntilde;a aquí debes introducir tu vieja contrase&ntilde;a</small></span>
+                            <input class="required" type="password" name="ContraseñaC" placeholder="Ej: M1gu3l0N">
+                            <a class="btn btn-primary" id="botonComprar" role="button"  href="#">
+                                Aceptar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <a href="home.html">Cancelar cambios y volver al home</a>
+            </div>    
+        </div>
+        <div class="col-xs-1 col-md-2">
+            <!-- margen derecho-->
+        </div>
+            
+
+    </div>
+    <br>    
+	<div class = "row" id="footer1"> <!-- Footer-->
+        <div class="col-sm-12 col-md-12">
+        <div class="footerComp" id="f1">
+                <a href="#">Versión escritorio</a>
+            </div>
+            <div class="footerComp" id="f2">
+                <p> DESCÁRGATE NUESTRA APP</p>
+                <img src="images/icono.png" alt="APP" width ="35px" height="35px">
+            </div>
+            <div class="footerComp" id="f3">
+                <p> SÍGUENOS EN:</p>
+                <img src="images/facebook.png" alt="facebook" width ="35px" height="35px">
+                <img src="images/twitter.png" alt="twitter" width ="35px" height="35px">
+            </div>
+
+        </div>
+    </div>
+    <div class = "row" id="footer2"> <!-- Footer-->
+        <div class="col-sm-12 col-md-12">
+            <div class="btn-group" role="group" aria-label="...">
+                <a href="contacto.html"><button type="button" class="btn btn-default botonFooter">Ayuda</button></a>	
+                <button type="button" class="btn btn-default botonFooter">Política y privacidad</button>
+                <button type="button" class="btn btn-default botonFooter">¿Quienes somos?</button>
+                <a href="sitemap.html"><button type="button" class="btn btn-default botonFooter">Mapa del sitio</button></a>	
+                <a href="ayuda.html"><button type="button" class="btn btn-default botonFooter">Preguntas frecuentes</button></a>  
+            </div>
+
+        </div>
+    </div>
+    <div class = "row" id="footer3"> <!-- Footer-->
+        <div class="col-sm-12 col-md-12">
+            <div class="footerComp2" id="ff1">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="footerComp2" id="ff2">
+                <p>Venta telefónica 902 488 488</p>
+                <p>0.09 €/min (IVA incluido)</p>
+                <p>Establecimiento de llamada 0,12€ (IVA incluido)</p>
+                <p>Lunes a Domingo- 10-24h</p>
+            </div>
+            <div class="footerComp2" id="ff3">
+                <p>(c) ENTRADAS EVENTIM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>		
+					
+			
+			
+	
+</body>
+</html>

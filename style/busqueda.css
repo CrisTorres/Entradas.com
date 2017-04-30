@@ -1,0 +1,279 @@
+body {
+    background-color: #F2F2F2;
+    font-family: Raleway;
+}
+.navbar-brand>img {
+    width: 120px;
+    margin-top: -15px;
+    height: auto;
+}
+#header .nanobar .bar {      /* Loading bar */
+    background: #fbff24;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #dddc16;
+    height: 6px;
+}
+
+.filtros{
+    background-color: white;
+    margin-bottom: 40px;
+    overflow: auto;
+}
+.filtros h2{
+    margin-left:15px;
+}
+.link{  /* Enlace de los filtros */
+    color: black;
+    display: block;
+}
+/* Panel contraible */
+.panel{
+    overflow: hidden;
+}
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+#headingZero a:after{
+    content: none;
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+}
+
+
+.ui-widget {    /* Modifica el calendario */
+    font-size: 1.5em;
+    font-family: Raleway;
+    padding: 0px;
+}
+
+    /* Navegar por paginas y cambiar Vista */
+.paginas, .paginas nav{
+    display: inline-table;
+}
+.pagination{
+    display: inline-table;
+    margin-left:20px;
+}
+.ordenarpor{
+    display: inline-table;
+    
+}
+.ordenarpor .btn{
+    margin-top:-20px;
+    font-size:14px;
+}
+.ordenarpor .dropdown-menu{
+    margin-top:-10px;
+    font-size:14px;
+}
+
+.vistaEvento{
+    display: inline-block;
+    float: right;
+    margin: 20px 0;
+}
+.vistaCarta{
+    background-image: url(../images/cartas.png);
+    background-size: 25px 25px;
+
+    position: relative;
+    z-index: 1;
+    height: 25px;
+    width: 25px;
+    display: inline-table;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.vistaCarta:hover{
+    background-image: url(../images/cartasSelect.png);
+}
+.vistaCartaSelected{
+    background-image: url(../images/cartasSelect.png);
+}
+.vistaLista{
+    background-image: url(../images/listas.png);
+    background-size: 25px 25px;
+    position: relative;
+    z-index: 1;
+    height: 25px;
+    width: 25px;
+    display: inline-table;
+    cursor: pointer;
+}
+.vistaLista:hover{
+    background-image: url(../images/listasSelect.png);
+}
+.vistaListaSelected{
+    background-image: url(../images/listasSelect.png);
+}
+
+    /************* Diseño de carta ********/
+.card {
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-clip: padding-box;   /* Expande el background hasta el borde (no incluido) */
+    background-color:white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+.card .card-title {                 /*** Titulo de la carta */
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card .card-image {                 /* La imagen de la carta */
+    position: relative;
+    overflow: hidden;
+}
+.card .card-image img {
+    border-radius: 2px 2px 0 0;
+    background-clip: padding-box;
+    position: relative;
+    z-index: 1;
+}
+.card .card-content {   /* Contenedor de toda la informacion mostrada */
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 12px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+.catEvento{         /* Categoria del evento */
+    font-size:20px;
+}
+.card_content_2{    /* Subcategoria y fecha */
+    margin-top:10px;
+    display:block;
+}
+.fechaEvento{       /* Fecha del evento, a la derecha */
+    float: right;
+}
+.card_content_3{    /* Contenedor de Ubicacion y precio */
+    margin-top:10px;
+    display:block;
+}
+.card_ubicacion{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    display:inline-table;
+    float: none;
+    padding: 0;
+}
+.card_precio{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    float:right;
+    display:inline-table;
+}
+.ciuEvento{
+    font-size: 14px;
+}
+
+
+/************* Diseño de lista ********/
+.list {
+    max-height: 162px;
+}
+.list .list-image {
+    float: left;
+    width: 295px;                   /** Tamaño definido **/
+    margin-right: 10px;
+}
+.list .list-image img {
+    border-radius: 2px 2px 0 0;
+    background-clip: padding-box;
+    position: relative;
+    z-index: 1;
+    height: 163px;
+}
+
+
+
+/****** Votos ******/
+.starsEvento{
+    float:right;
+    cursor:pointer;
+}
+
+/*********** Barra de la busqueda *************/
+.miBusqueda{
+    text-decoration:none;
+    margin-left:5px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.resultadosBusqueda{
+    text-decoration:none;
+    font-size: 20px;
+    float:right;
+    color: black;
+    text-decoration: none;
+}
+.ordenarArriba a:hover{
+    text-decoration: none;
+    color: black;
+}
+.borrarFiltros{
+    text-decoration:none;
+    font-size: 12px;
+    float:right;
+    cursor:pointer;
+}
+
+/**** Filtros ***/
+.filterDiv{
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    display:inline-table;
+    background-color:#d4d4d4;
+    padding:5px;
+    width: 90%;
+    margin-left:5px;
+    margin-bottom: 5px;
+    cursor:pointer;
+}
+.filterDiv span{
+    font-size:14px;
+    margin-right:5px;
+}
+.borrarImg{
+    width:20px;
+    height:20px;
+    float: right;
+}
+
+@media screen and (max-width: 640px)  {
+    .list-xs {
+        max-height: none;
+    }
+
+    .list-xs .list-image-xs {                 /* La imagen de la carta */
+        position: relative;
+        overflow: hidden;
+        float: none;
+        width: auto;
+        margin-right: auto;
+    }
+    .list-xs .list-image-xs img {
+        border-radius: 2px 2px 0 0;
+        background-clip: padding-box;
+        position: relative;
+        z-index: 1;
+        width: auto;
+        height: auto;
+    }
+    .vistaEvento{
+        display:none;
+    }
+
+}

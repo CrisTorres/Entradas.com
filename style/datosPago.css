@@ -1,0 +1,94 @@
+.nav-tabs li {
+	width: 33.33% !important;
+	text-align: center;
+}
+#tab2, #tab1{
+	border-right: 1px solid grey;
+}
+.nav-tabs{
+	border-bottom: 0px;
+}
+#tab1, #tab2, #tab3 {
+	border-bottom: 1px solid grey;
+}
+#tab1.active, #tab2.active, #tab3.active  {
+	border-bottom: 0px;
+}
+.nav-tabs>li>a {
+	border: 0px;
+}
+.tab-pane{
+	margin-left: 10px;
+}
+.tab-pane h5{
+	margin-left: 30px;
+}
+.form-group label{
+	width: 90px;
+	margin-left: 10px;
+	height: auto;
+}
+.form-group{
+	margin-top: 4px;
+}
+#mes.form-control{
+	width:130px !important;
+	//margin-top: -15px;
+
+}
+#anyo.form-control{
+	width:80px !important;
+
+}
+.cvc.form-control{
+	width:55px !important;
+	margin-right: 13px;
+}
+#labelcvc{
+	width: 90px;
+	margin-left: 13px;
+}
+.form-group p{
+	float:left;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+#filaBoton{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#numT, #titular{
+	margin-left: 100px;
+}
+.cvv{
+	margin-left: 100px;
+}
+#cvv{
+	margin-left: 100px;
+}
+#errorCvv{
+	margin-left: 75px;
+}
+#condG{
+	margin-left: 23px;
+}
+@media only screen and (max-width: 800px) {
+
+	.form-group{
+		display: inline-block;
+	}
+	#fgcvv{
+		width: 100%;
+	}
+	.cvc {
+		margin: 0px;
+		display: inline;
+	}
+}
+@media only screen and (max-width: 767px) {
+
+	#numT, #titular{
+	margin-left: 0px;
+	margin-right: 10px;
+	}
+}

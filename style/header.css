@@ -1,0 +1,10 @@
+.navbar-brand>img {
+	width: 120px;
+	margin-top: -15px;
+	height: auto;
+}
+
+#borrar {
+	height: 1000px;
+}
+
